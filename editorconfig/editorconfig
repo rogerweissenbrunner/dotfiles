@@ -1,0 +1,71 @@
+# EditorConfig: https://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 132
+tab_width = 4
+trim_trailing_whitespace = true
+
+[*.{csv,tsv,md,mdown,markdown}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_size = 2
+insert_final_newline = false
+
+[*.{htm,html,xml,xsl,xslt}]
+indent_style = tab
+insert_final_newline = false
+
+[*.{bash,sh,zsh}]
+indent_size = 2
+
+[*.{c,c++,cc,cpp,cs,cxx,h,h++,hh,hpp,hs,hxx}]
+indent_size = 4
+
+[*.{rb,ru}]
+indent_size = 2
+
+[*.{ajs,ats,cjs,cts,js,jsx,mjs,mts,rjs,rts,ts,tsx,vue,coffee}]
+indent_size = 2
+quote_type = single
+
+[*.{css,json,less,sass,scss}]
+indent_size = 2
+
+[.editorconfig]
+indent_size = unset
+indent_style = unset
+
+[Gemfile]
+indent_size = unset
+indent_style = unset
+insert_final_newline = false
+
+[{M,m}akefile]
+indent_size = unset
+indent_style = tab
+insert_final_newline = false
+
+[Procfile]
+indent_size = unset
+indent_style = tab
+insert_final_newline = false
+
+[Rakefile]
+indent_size = unset
+indent_style = tab
+insert_final_newline = false
+
+[devcontainer.json]
+indent_style = tab
+
+[docker-compose.yml]
+indent_size = 4

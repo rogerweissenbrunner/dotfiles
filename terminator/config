@@ -1,0 +1,34 @@
+[global_config]
+  geometry_hinting = True
+  inactive_color_offset = 0.61
+  enabled_plugins = CustomCommandsMenu, TerminalShot, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, ActivityWatch, InactivityWatch
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+  clear_select_on_copy = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#2e3436"
+    background_darkness = 0.95
+    background_image = None
+    font = FiraCode Nerd Font Regular 10
+    foreground_color = "#eeeeec"
+    scrollback_infinite = True
+    disable_mousewheel_zoom = True
+    palette = "#2e3436:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    bold_is_bright = True
+    copy_on_selection = True
+    title_transmit_bg_color = "#204a87"
+    title_receive_bg_color = "#3465a4"
+    title_use_system_font = False
+    title_font = FiraCode Nerd Font Light 9
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[ plugins]
