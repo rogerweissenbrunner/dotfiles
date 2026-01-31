@@ -1,0 +1,191 @@
+[user]
+    name = "Roger Weißenbrunner"
+    email = "rogerweissenbrunner@proton.me"
+    signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQ+71GZL/BDjl6VagW0vWqEb9DlQ71p6Dx5sBeTAved Roger Weissenbrunner"
+
+[gpg]
+    format = "ssh"
+
+[gpg "ssh"]
+    key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQ+71GZL/BDjl6VagW0vWqEb9DlQ71p6Dx5sBeTAved Roger Weissenbrunner"
+
+[github]
+    user = "rogerweissenbrunner"
+    email = "rogerweissenbrunner@proton.me"
+
+[gist]
+    private = "no"
+
+[core]
+    attributesfile = "~/.gitattributes"
+    autocrlf = input
+    editor = "/usr/bin/codium --wait"
+    excludes = "~/.gitignore"
+    excludesfile = "~/.gitignore"
+    fscache = true
+    ignorecase = false
+    mergeoptions = "--no-edit"
+    pager = "less -FiR"
+    precomposeunicode = false
+    symlinks = true
+    trustctime = false
+    untrackedCache = true
+    whitespace = "space-before-tab,-indent-with-non-tab,trailing-space"
+
+[init]
+    defaultBranch = "main"
+
+[apply]
+    ignorewhitespace = "change"
+    whitespace = "fix"
+
+[commit]
+    gpgsign = true
+    verbose = true
+
+[branch]
+    autosetuprebase = "always"
+
+[column]
+    ui = auto
+
+[push]
+    default = "upstream"
+    rebase = true
+    followTags = true
+
+[pull]
+    rebase = false
+
+[rebase]
+    autosquash = true
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+    interactive = true
+
+[help]
+    format = "html"
+
+[gitignore]
+    global = "~/.gitignore"
+
+[diff]
+    renames = "copies"
+    tool = "vscodium"
+
+[diff "astextplain"]
+    textconv = "astextplain"
+
+[difftool]
+    prompt = false
+    trustExitCode = false
+    keepBackup = false
+
+[difftool "vscodium"]
+    cmd = "/usr/bin/codium --wait --diff $LOCAL $REMOTE"
+
+[help]
+    autocorrect = 1
+
+[merge]
+    tool = "vscodium"
+    log = true
+    branchdesc = true
+
+[mergetool]
+    prompt = false
+    trustExitCode = false
+    keepBackup = false
+
+[mergetool "vscodium"]
+    cmd = "/usr/bin/codium --wait $MERGED"
+
+[pack]
+    packSizeLimit = 2g
+
+[gitflow "branch"]
+    master = "main"
+    develop = "develop"
+
+[gitflow "prefix"]
+    bugfix = "bugfix/"
+    feature = "feature/"
+    hotfix = "hotfix/"
+    develop = "develop"
+    release = "release/"
+    support = "support/"
+    versiontag =
+
+[filter "lfs"]
+    clean = "git-lfs clean -- %f"
+    smudge = "git-lfs smudge -- %f"
+    process = "git-lfs filter-process"
+    required = true
+
+[web]
+    browser = "/snap/bin/chromium --new-window --profile-directory=Personal"
+
+[alias]
+    new = init
+    a = add
+    all = add --all
+    b = branch
+    bd = branch -d
+    bl = blame
+    cdroot = !cd `git root`
+    ci = commit -S -s
+    cia = commit -S -s --amend
+    cie = commit -S -s --allow-empty
+    cian = commit -S -s --amend --no-edit
+    cl = clean -df
+    co = checkout
+    coo = checkout --ours
+    cot = checkout --theirs
+    d = rm
+    df = diff
+    dt = difftool
+    f = fetch
+    fa = fetch --all
+    fi = fetch --origin
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    ignored = ls-files --ignored --exclude-standard --others
+    l = log --pretty --oneline
+    lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --color --graph --abbrev-commit --
+    logp = log --pretty
+    m = merge
+    mt = mergetool
+    pl = pull
+    plo = pull origin
+    plom = pull origin main
+    plt = pull --dry-run
+    pr = pull --rebase
+    ps = push
+    psf = push --force
+    psu = push --set-upstream
+    rb = rebase
+    rba = rebase --abort
+    rbad = rebase --committer-date-is-author-date
+    rbc = rebase --continue
+    rbi = rebase -i
+    rbs = rebase --skip
+    rem = remote
+    rema = remote add
+    remr = remote remove
+    remotes = remote -v
+    s = status
+    st = stash
+    sta = stash apply
+    stc = stash clear
+    std = stash drop
+    stl = stash list
+    stp = stash pop
+    standup = shortlog --since=yesterday
+    sw = switch
+    uca = reset --soft HEAD@{1}
+    uc = reset HEAD^
+    unstage = reset HEAD --
+    who = shortlog -s -n --no-merges --

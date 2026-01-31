@@ -1,0 +1,144 @@
+# This file contains a list of files and directories that should be ignored by git
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*~
+*.sw?
+._*
+*.Spotlight-V100
+.Spotlight-V100
+.Trashes
+Icon?
+Desktop.ini
+.history
+.svn
+
+# Atom
+.atom/
+
+# Visual Studio Code
+.vscode/**/*
+
+# Logs
+log/*
+!log/.gitkeep
+!log/.keep
+logs/*
+!logs/.gitkeep
+!logs/.keep
+**/*.log
+lerna-debug.log*
+mkmf.log*
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js
+jspm_packages/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Environment variables
+.env
+.env.backup
+.env.test
+.env.production
+*.env
+!*.env*.erb
+
+# Local
+*.local
+
+# Python
+*.a
+**/*.pyc
+**/*.pyd
+**/*.pyo
+*.pkl
+*.so
+*.egg
+**/*.egg-info/
+**/*.eggs/
+**/__pycache__/
+*.coverage
+*.tox/
+*.nox/
+*.mypy_cache/
+*.pytest_cache/
+*.hypothesis/
+*.ipynb_checkpoints
+**/*.venv/
+
+# Ruby
+**/.rvmrc
+**/.rbfu-version
+**/.rbenv-version
+**/.versions.conf
+*.gem
+*.rbc
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/doc/
+/pkg/
+/spec/reports/*
+/.yardoc/
+/_yardoc/
+.bundle/
+.config/
+.fleet/
+.nova/
+.vite/
+.yardoc/
+.zed/
+_yardoc/
+.byebug_history
+auth.json
+config/master.key
+coverage/
+dist/
+dist-ssr/
+InstalledFiles
+lib/bundler/man/
+lib/**/*.bundle
+lib/**/*.so
+lib/**/*.dll
+pkg/
+rdoc/
+reports/
+storage/*
+storage/*.key
+!storage/.gitkeep
+!storage/.keep
+tmp/**/*
+!tmp/.gitkeep
+!tmp/.keep
+!tmp/cache/.gitkeep
+!tmp/cache/.keep
+!tmp/pids/.gitkeep
+!tmp/pids/.keep
+!tmp/sockets/.gitkeep
+!tmp/sockets/.keep
+!tmp/storage/.gitkeep
+!tmp/storage/.keep
+vendor/
+!vendor/.keep
+!vendor/.gitkeep
+
+# SQLite
+*.sqlite*
+
+# Git
+!.gitignore
