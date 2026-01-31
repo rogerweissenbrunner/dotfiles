@@ -1,0 +1,4 @@
+--css=tailwind
+--skip-devcontainer
+--skip-docker
+--skip-kamal

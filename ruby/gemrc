@@ -1,0 +1,12 @@
+# :ssl_verify_mode: 1
+# :ssl_ca_cert: system
+
+---
+:gem_home: $HOME/.rubygems
+:update_sources: true
+:verbose: true
+:backtrace: false
+:benchmark: false
+:sources:
+- https://rubygems.org/
+gem: --no-document --user

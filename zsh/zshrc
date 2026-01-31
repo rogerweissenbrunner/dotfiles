@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+source $HOME/.zshoptions
+source $HOME/.zshaliases
+source $HOME/.zshfunctions
+source $HOME/.zprofile
+
+plugins=( battery bundler colored-man-pages colorize command-not-found common-aliases dircycle dirhistory dotenv emoji encode64 gem git git-extras github gitignore gpg-agent history-substring-search history jsontools lol man nmap node npm per-directory-history pow rails rake-fast rake rand-quote redis-cli rsync ruby screen shrink-path ssh-agent sudo thor tmux tmuxinator urltools vi-mode vim-interaction web-search )
+
+source $ZSH/oh-my-zsh.sh
